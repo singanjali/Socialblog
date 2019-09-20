@@ -1,0 +1,24 @@
+<main>
+
+  <h1> Main Index </h1>
+  <% @all_users.each do |u| %>
+  <p><%= u.name %> </p>
+  <p><%= u.email %> </p>
+
+  <p><%= u.age %> </p>
+  <!-- <p><%= u.password %> </p> --> -->
+  <%= link_to "Edit", user_edit_path(u.id)%>
+
+  <a href="/users/<%= u.id %>/">Show Details</a>
+  
+  <%= link_to "Delete", user_delete_path(u.id),method: :delete%>
+  
+  <% end %>
+  
+  
+  
+  
+
+
+
+</main>    

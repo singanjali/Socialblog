@@ -1,0 +1,19 @@
+ 
+<h1> User Create/Edit Form from partial  </h1>
+  
+  <%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <br>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+    <br> 
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+    <br>
+  <%= f.submit :submit %>
+
+<% end %>

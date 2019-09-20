@@ -1,0 +1,18 @@
+<main id="sign-in-page">
+<h1>Sign In</h1>
+
+<%= form_tag user_create_session_path do %>
+   <%= label_tag :email %>
+   <%= email_field_tag :email %>
+   <br>
+   <%= label_tag :password %>
+   <%= password_field_tag :password %>
+   <br>
+   
+   <%= submit_tag "Sign_in" %>
+
+<% end %>
+</main>
+
+
+
